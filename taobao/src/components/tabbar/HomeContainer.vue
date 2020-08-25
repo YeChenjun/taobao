@@ -1,16 +1,14 @@
 <template>
   <div>
-    <div>
-      <i style="position:relative; left: 5px;top: 5px">
-        <img src="../../images/tianmao.png" style="width: 8%;height: 20px">
-      </i>
-<!--    <i class="mui-icon mui-icon-camera" style="position:absolute; top: 2px;right: 70px;z-index: 5"></i>-->
+    <section>
 
+      <img src="../../images/tianmao.png">
 
       <input type="text" class="text" id="textlunbo" >
 
-    <input type="button" class="serch" value="搜索">
-    </div>
+      <input type="button" class="serch" value="搜索">
+
+    </section>
     
     <div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
       <div class="mui-scroll">
@@ -280,17 +278,23 @@ import lunbo from "../subcomponents/lunbo.vue"
 }
 
 
+  section{
+    display: flex;
+  }
+
+  section>img {
+    width: 12%;height: 23px;margin:5px;
+  }
+
   .serch{ border: none;border-radius: 20px;background: linear-gradient(#ffd571,#d35400) ;margin-top: 5px;margin-bottom: 0;margin-left: 5px;
     width: 12%;height: 23px;font-size: 12px;color: snow;
    font-weight: 600;text-indent: -3px;
    padding-top: 2px}
 
   .text{
-    position: relative;left: 5px;
-    border-radius: 20px;width: 75%;height: 30px;border: #d35400 1px solid;font-size: 15px;
-    padding-left: 10px;
-    padding-right: 10px;
+    border-radius: 20px;height: 30px;border: #d35400 1.5px solid;font-size: 15px;
     margin-bottom: 2px;
+    flex: 1;
   }
 
   .table{
