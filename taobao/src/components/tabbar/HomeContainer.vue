@@ -60,7 +60,6 @@
     </mt-swipe>
 
 
-   
     <div class="table">
 
       <div><router-link to=" ">
@@ -108,11 +107,12 @@
 
     </div>
 
+
     <lunbo-box></lunbo-box>
 
     <div class="daogou" >
       <div class="fengexian"></div>
-      <table class="tb2">
+      <table class=" tb2">
 
         <tr>
           <td>聚划算</td>
@@ -130,7 +130,7 @@
             <img src="../../images/cloth2.png" alt />
             <div class="mui-media-body"></div>
           </router-link></td>
-          <td><router-link to="/home/goodslist">
+          <td style="width: 74px;height: 69px"><router-link to="/home/goodslist">
             <img src="../../images/cloth3.png" alt />
             <div class="mui-media-body"></div>
           </router-link></td>
@@ -156,7 +156,7 @@
             <img src="../../images/cloth2.png" alt />
             <div class="mui-media-body"></div>
           </router-link></td>
-          <td><router-link to="/home/goodslist">
+          <td style="width: 74px;height: 69px"><router-link to="/home/goodslist">
             <img src="../../images/cloth3.png" alt />
             <div class="mui-media-body"></div>
           </router-link></td>
@@ -182,7 +182,7 @@
             <img src="../../images/cloth2.png" alt />
             <div class="mui-media-body"></div>
           </router-link></td>
-          <td><router-link to="/home/goodslist">
+          <td style="width: 74px;height: 69px"><router-link to="/home/goodslist">
             <img src="../../images/cloth3.png" alt />
             <div class="mui-media-body"></div>
           </router-link></td>
@@ -278,13 +278,12 @@ import lunbo from "../subcomponents/lunbo.vue"
   &:nth-child(3) {}
 }
 
-
   section{
     display: flex;
   }
 
   section>img {
-    width: 12%;height: 23px;margin:5px;
+    width: 8%;height: 23px;margin:5px;
   }
 
   .serch{ border: none;border-radius: 20px;background: linear-gradient(#ffd571,#d35400) ;margin-top: 5px;margin-bottom: 0;margin-left: 5px;
@@ -298,7 +297,7 @@ import lunbo from "../subcomponents/lunbo.vue"
     flex: 1;
   }
 
- .table{
+  .table{
     width: 98%;
     margin-bottom: 10px;
     display: flex;
@@ -322,9 +321,8 @@ import lunbo from "../subcomponents/lunbo.vue"
     }
   }
 
-
   .tb2{
-   width: 98%;
+    width: 98%;
     height:80px;
     margin-right: 10px;
     margin-bottom: 10px;
@@ -352,7 +350,7 @@ import lunbo from "../subcomponents/lunbo.vue"
     height: 100%;
     background-color:  #F5F5F7;
     position: absolute;
-    left: 49%;
+    left: 50%;
   }
 
 
