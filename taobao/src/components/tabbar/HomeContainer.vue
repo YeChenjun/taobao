@@ -337,7 +337,7 @@ import lunbo from "../subcomponents/lunbo.vue"
     height: 100%;
     background-color:  #F5F5F7;
     position: absolute;
-    left: 50%;
+    left: 49%;
   }
 
 
