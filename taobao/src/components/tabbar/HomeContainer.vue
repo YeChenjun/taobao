@@ -129,7 +129,7 @@
             <img src="../../images/cloth2.png" alt />
             <div class="mui-media-body"></div>
           </router-link></td>
-          <td style="width: 74px;height: 69px"><router-link to="/home/goodslist">
+          <td><router-link to="/home/goodslist">
             <img src="../../images/cloth3.png" alt />
             <div class="mui-media-body"></div>
           </router-link></td>
@@ -155,7 +155,7 @@
             <img src="../../images/cloth2.png" alt />
             <div class="mui-media-body"></div>
           </router-link></td>
-          <td style="width: 74px;height: 69px"><router-link to="/home/goodslist">
+          <td><router-link to="/home/goodslist">
             <img src="../../images/cloth3.png" alt />
             <div class="mui-media-body"></div>
           </router-link></td>
@@ -181,7 +181,7 @@
             <img src="../../images/cloth2.png" alt />
             <div class="mui-media-body"></div>
           </router-link></td>
-          <td style="width: 74px;height: 69px"><router-link to="/home/goodslist">
+          <td><router-link to="/home/goodslist">
             <img src="../../images/cloth3.png" alt />
             <div class="mui-media-body"></div>
           </router-link></td>
