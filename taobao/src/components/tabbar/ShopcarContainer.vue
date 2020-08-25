@@ -1,11 +1,12 @@
 <template>
     <div>
   <div class="shopcar-container">
-       <br>
-      <span style="display: flex;text-align: center;">
-      <span style="flex: 1;font-weight: 500;font-size: 17px;color: black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;购物车(<span class="snow">{{ $store.getters.getGoodsCountAndAmount.count }}</span>)</span>
-      <span style="font-weight: 500;font-size: 15px;color: black">管理&nbsp;&nbsp;&nbsp;&nbsp;</span>
-      </span>
+      <br>
+      <div style="display: flex;text-align: center;">
+      <div style="flex: 1;font-weight: 500;font-size: 17px;color: black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;购物车(<span class="snow">{{ $store.getters.getGoodsCountAndAmount.count }}</span>)</div>
+      <div style="font-weight: 500;font-size: 15px;color: black">管理&nbsp;&nbsp;&nbsp;&nbsp;</div>
+      </div>
+
     <div class="goods-list">
       <!-- 商品列表项区域 -->
       <div class="mui-card" v-for="(item, i) in goodslist" :key="item.id">
