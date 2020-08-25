@@ -469,14 +469,17 @@ a{cursor: url('texiao/chuyin3.png'),default}
     box-shadow: 0 0 10px #eae7d9	; /*x,y，模糊 */
     border-radius: 50%;
     cursor: pointer;
+     margin: 8px;
 }
-#lbtn0{position: absolute;
-        left: 20px;top: 120px;
+
+#lbtn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
 }
-#lbtn1{position: absolute;
-    left: 20px;top: 150px;}
-#lbtn2{position: absolute;
-    left: 20px;top: 180px;}
+
+
 .lbphoto{
     width: 100%;
     height: 100%;
