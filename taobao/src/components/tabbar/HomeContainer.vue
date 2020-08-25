@@ -60,58 +60,59 @@
     </mt-swipe>
 
 
-    <table class="table">
-      <tr>
-        <td><router-link to=" ">
-          <img src="../../images/menu1.png" alt >
-          <div class="mui-media-body">天猫新品</div>
-        </router-link></td>
-        <td> <router-link to=" ">
-          <img src="../../images/fire.png" alt />
-          <div class="mui-media-body">今日爆款</div>
-        </router-link></td>
-        <td><router-link to="/home/goodslist">
-          <img src="../../images/menu3.png" alt />
-          <div class="mui-media-body">天猫超市</div>
-        </router-link></td>
-        <td><router-link to=' '>
-          <img src="../../images/menu4.png" alt />
-          <div class="mui-media-body">天猫国际</div>
-        </router-link></td>
-        <td><router-link to=' '>
-          <img src="../../images/checken.png" alt />
-          <div class="mui-media-body">芭芭农场</div>
-        </router-link></td>
-      </tr>
+   
+    <div class="table">
 
-      <tr>
-        <td><router-link to=" ">
-          <img src="../../images/phone.png" alt >
-          <div class="mui-media-body">充值中心</div>
-        </router-link></td>
-        <td> <router-link to=" ">
-          <img src="../../images/menu2.png" alt />
-          <div class="mui-media-body">机票酒店</div>
-        </router-link></td>
-        <td><router-link to=" ">
-          <img src="../../images/jinbi.png" alt />
-          <div class="mui-media-body">零淘金币</div>
-        </router-link></td>
-        <td><router-link to=' '>
-          <img src="../../images/cuizi.png" alt />
-          <div class="mui-media-body">阿里拍卖</div>
-        </router-link></td>
-        <td><router-link to=' '>
-          <img src="../../images/mouse.png" alt />
-          <div class="mui-media-body">淘宝吃货</div>
-        </router-link></td>
-      </tr>
-    </table>
+      <div><router-link to=" ">
+       <span class="mui-media-body"><img src="../../images/menu1.png" alt >
+        天猫新品</span>
+      </router-link></div>
+      <div><router-link to=" ">
+        <span class="mui-media-body"><img src="../../images/fire.png" alt />
+        今日爆款</span>
+      </router-link></div>
+      <div><router-link to="/home/goodslist">
+        <span class="mui-media-body"><img src="../../images/menu3.png" alt />
+        天猫超市</span>
+      </router-link></div>
+      <div><router-link to=' '>
+        <span class="mui-media-body"><img src="../../images/menu4.png" alt />
+        天猫国际</span>
+      </router-link></div>
+      <div><router-link to=' '>
+        <span class="mui-media-body"><img src="../../images/checken.png" alt />
+        芭芭农场</span>
+      </router-link></div>
+      </div>
+    <div class="table">
+      <div><router-link to=" ">
+        <span class="mui-media-body"><img src="../../images/phone.png" alt >
+        充值中心</span>
+      </router-link></div>
+      <div><router-link to=" ">
+        <span class="mui-media-body"><img src="../../images/menu2.png" alt />
+        机票酒店</span>
+      </router-link></div>
+      <div><router-link to=" ">
+        <span class="mui-media-body"><img src="../../images/jinbi.png" alt />
+        零淘金币</span>
+      </router-link></div>
+      <div><router-link to=' '>
+         <span class="mui-media-body"><img src="../../images/cuizi.png" alt />
+       阿里拍卖</span>
+      </router-link></div>
+      <div><router-link to=" ">
+        <span class="mui-media-body"><img src="../../images/mouse.png" alt />
+        淘宝吃货</span>
+      </router-link></div>
+
+    </div>
+
     <lunbo-box></lunbo-box>
 
     <div class="daogou" >
       <div class="fengexian"></div>
-      <table class="table tb2">
+      <table class="tb2">
 
         <tr>
           <td>聚划算</td>
@@ -297,22 +298,36 @@ import lunbo from "../subcomponents/lunbo.vue"
     flex: 1;
   }
 
-  .table{
+ .table{
     width: 98%;
-    height:80px;
-    margin-left: 15px;
-    margin-right: 10px;
     margin-bottom: 10px;
-    img {
-      width: 40px;
-      height: 40px
-    }
-    .mui-media-body{font-size: 12px;
+    display: flex;
+    height: 50px;
+
+    div{
+      flex: 1;
+      font-size: 12px;
       font-weight: 500;
-      color: #6d6d72;}
+
+      img {
+        width: 35px;
+        height: 35px;
+      }
+      span{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #6d6d72;
+      }
+    }
   }
 
+
   .tb2{
+   width: 98%;
+    height:80px;
+    margin-right: 10px;
+    margin-bottom: 10px;
     margin-left: 10px;
     font-weight: 600;
     font-size: 15px;
