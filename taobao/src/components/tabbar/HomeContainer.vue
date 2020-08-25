@@ -300,7 +300,8 @@ import lunbo from "../subcomponents/lunbo.vue"
   .table{
     width: 98%;
     height:80px;
-    margin-left: 20px;
+    margin-left: 15px;
+    margin-right: 10px;
     margin-bottom: 10px;
     img {
       width: 40px;
