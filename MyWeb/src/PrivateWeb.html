@@ -5,8 +5,8 @@
     <title>PrivteWeb</title>
     <script type="text/javascript" src="jQuery/jquery-3.5.1.js"> </script>
     <script type="text/javascript" src="jQuery/jquery-ui.js"> </script>
+    <link href="Webcs.css" rel="stylesheet" type="text/css" />
     <script src="texiao/yanhua.js"></script>
-    <link rel="stylesheet" href="Webcs.css">
     <script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
 </head>
 
@@ -57,7 +57,6 @@
         <td>POWER</td>
         <td>BOLG</td>
     </tr>
-
     <tr>
     <td></td>
     <td></td>
@@ -67,7 +66,7 @@
     <td></td>
     </tr>
     <tr>
-        <td><a href="https://github.com/" target = "_blank"> github </a></td>
+        <td><a href="https://blog.csdn.net/qq_39041459/article/details/80600302" target = "_blank"> github </a></td>
         <td><a href="https://www.html.cn/qa/css3/12526.html" target = "_blank"> 光标 </a></td>
         <td><a href="https://www.cnblogs.com/awjbky/p/12155621.html" target = "_blank" >显示隐藏 </a> </td>
         <td><a href="https://blog.csdn.net/qq_40492436/article/details/104872107?utm_medium=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase" target = "_blank"> idea失常</a></td>
@@ -175,9 +174,9 @@
 
 
 <select id="sel">
-    <option value="scj" >收藏夹</option>
-    <option value="tubiao" >自定义图标</option>
-    <option value="lianjie" >自定义链接</option>
+    <option value="scj" >&nbsp;收藏夹</option>
+    <option value="tubiao" >&nbsp;自定义图标</option>
+    <option value="lianjie" >&nbsp;自定义链接</option>
     <option value="null"  selected > </option>
 </select>
 </div>
@@ -185,16 +184,12 @@
 
 
 
-
-
-
-<form action="http://www.baidu.com/s?word=" target= "_blank" >
-<table style="position: absolute; left: 28%;top: 600px">
-    <th>
+<form action="http://www.baidu.com/s?word=" target= "_blank">
+    <div class="search">
         <input id="shuru" type="text" name="word" class="text" style="height: 50px;width: 600px;background: snow;border: black 2px solid">
+        &nbsp;&nbsp;&nbsp;
         <input id="shuchu" type="submit" value=" " class="text" style="width: 100px;height: 52px;background: black;border: 0px">
-    </th>
-</table>
+    </div>
 </form>
 
 <div id="yc1">
@@ -221,14 +216,12 @@
 
 
 <div class="box" id="box">
-    <div>
-        <span><img src="picture/22331.gif" alt=""></span>
-        <span><img src="picture/22332.gif" alt=""></span>
-        <span><img src="picture/22333.gif" alt=""></span>
-        <span><img src="picture/22334.gif" alt=""></span>
-        <span><img src="picture/22335.gif" alt=""></span>
-        <span><img src="picture/22336.gif" alt=""></span>
-    </div>
+        <div><img src="picture/22331.gif" alt=""></div>
+        <div><img src="picture/22332.gif" alt=""></div>
+        <div><img src="picture/22333.gif" alt=""></div>
+        <div><img src="picture/22334.gif" alt=""></div>
+        <div><img src="picture/22335.gif" alt=""></div>
+        <div><img src="picture/22336.gif" alt=""></div>
 </div>
 
 
@@ -242,21 +235,22 @@
 
 </audio>
 
-
+<div class="lb-box">
 <div class="lbj" id="lbj">
     <div id="lbtn">
         <input type="button" id="lbtn0" class="lbtn">
         <input type="button" id="lbtn1" class="lbtn">
         <input type="button" id="lbtn2" class="lbtn">
     </div>
-    <img src="picture/feiji.png" alt="" class="lbphoto">
+    <img src="picture/feiji.png" alt=""  class="lbphoto">
     <img src="picture/hehua.png" alt="" hidden class="lbphoto">
     <img src="picture/shaonv.png" alt="" hidden class="lbphoto">
+</div>
 </div>
 
 <div id="tk" ></div>
 <div id="tk2" hidden></div>
 </body>
 
-<script src="Webjs.js"></script>
+<script type="text/javascript" src="Webjs.js"></script>
 </html>
