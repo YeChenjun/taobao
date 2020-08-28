@@ -1,4 +1,3 @@
-// require('./Webcs.css');
 
 //监听加载状态改变
 document.onreadystatechange = completeLoading;
@@ -22,15 +21,15 @@ function completeLoading() {
 
 
 
-var photo = $(".photo");
-var div = $("#all").find("div");
-for (let i=0;i<photo.length;i++){
-    photo[i].onmouseover = function () {
-        div[i].className = "lunkuo";
-    }
-    photo[i].onmouseleave = function () {
-        div[i].className = "";
-    }}
+// var photo = $(".photo");
+// var div = $("#all").find("div");
+// for (let i=0;i<photo.length;i++){
+//     photo[i].onmouseover = function () {
+//         div[i].className = "lunkuo";
+//     }
+//     photo[i].onmouseleave = function () {
+//         div[i].className = "";
+//     }}
 
 
 
@@ -346,7 +345,7 @@ drag.onmousedown = function (e) {//鼠标按下触发
 
 
 
-    var i = 0;
+    var i = 1;
     var lbphoto = $('.lbphoto');
 
     function lb() {
@@ -365,7 +364,6 @@ drag.onmousedown = function (e) {//鼠标按下触发
         i+=1;
         if (i===3){i=0}
     }
-    lb();
     setInterval(lb,6000);
     var lbtn0 = $("#lbtn0");
     var lbtn1 = $("#lbtn1");
