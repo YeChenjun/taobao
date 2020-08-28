@@ -274,14 +274,14 @@ var sum = 0;
 $('#bjbtn').click(function () {
     body.className="hei";
     tk.style.display='none';
-    tk2.style.display='block';
+    tk2.style.display='inherit';
     $('#bj').attr('src','picture/feiji.png');
     $('#taiyang').attr("src",'picture/yueliangs.png');
     if (sum%2===1){
         body.className="bai";
         $('#bj').attr('src','picture/flowerm.png');
         $('#taiyang').attr("src",'picture/太阳.png');
-        tk.style.display='block';
+        tk.style.display='inherit';
         tk2.style.display='none';
     }
     sum+=1;
@@ -294,7 +294,7 @@ var sum2 = 0;
 $('#mfbtn').click(function () {
     box.style.display="none";
     if (sum2%2===1){
-        box.style.display= "block"
+        box.style.display= "inherit"
     }
     sum2+=1;
 })
@@ -305,7 +305,7 @@ var sum3 = 0;
 $('#lbbtn').click(function () {
     lbj.style.display="none";
     if (sum3%2===1){
-        lbj.style.display= "block"
+        lbj.style.display= "inherit"   //父系继承
     }
     sum3+=1;
 })
