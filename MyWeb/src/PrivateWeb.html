@@ -5,6 +5,7 @@
     <title>PrivteWeb</title>
     <script type="text/javascript" src="jQuery/jquery-3.5.1.js"> </script>
     <script type="text/javascript" src="jQuery/jquery-ui.js"> </script>
+    <script type="text/javascript" src="Vue/vue.js"> </script>
     <link href="Webcs.css" rel="stylesheet" type="text/css" />
     <script src="texiao/yanhua.js"></script>
     <script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
@@ -19,6 +20,28 @@
 <div><img src="picture/flowerm.png" alt="" id="bj"></div>
 
 <div><img src="picture/太阳.png" alt="" id="taiyang"></div>
+
+<div id="jishiben" style="display: none">
+    <div class="jin">
+        <input  v-model="inputValue" @keyup.enter="add" placeholder="你想说什么.." onfocus="this.placeholder=''" class="in">
+    </div>
+    <div class="jli-box">
+        <div class="jli" v-for="(item,idex) in list">
+            <div>
+                <span>{{idex + 1}}.</span>
+                <label>{{item}}</label>
+            </div>
+        </div>
+    </div>
+    <div class="jf-box">
+        <div class="itemNum" style="margin: 3px">
+            {{list.length}} items
+         </div>
+        <div style="margin: 3px" @click="remove">
+            clear
+        </div>
+    </div>
+</div>
 
 <div id="all">
 <div id="div1" class="">
@@ -211,6 +234,12 @@
         <input type="checkbox" id="lbbtn">
         <span>&nbsp轮播&nbsp&nbsp隐藏</span>
     </label>
+
+    <br><br>
+    <label class="btlab">
+        <input type="checkbox" checked id="jsbbtn">
+        <span>&nbsp记事&nbsp&nbsp隐藏</span>
+    </label>
 </div>
 
 
@@ -253,4 +282,21 @@
 </body>
 
 <script type="text/javascript" src="Webjs.js"></script>
+
+<script>
+    new Vue({
+        el: "#jishiben",
+        data: {
+            list: [],
+            inputValue: "",
+        },
+        methods: {
+            add: function(){
+            this.list.push(this.inputValue)},
+            remove: function () {
+              this.list.splice(0,10)
+            }
+        }
+    })
+</script>
 </html>
