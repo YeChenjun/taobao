@@ -310,6 +310,19 @@ $('#lbbtn').click(function () {
     sum3+=1;
 })
 
+    $(function () {
+    let jsb = document.getElementById('jishiben');
+    let sum4 = 0;
+    $('#jsbbtn').click(function () {
+        jsb.style.display="inherit";
+        if (sum4%2===1){
+           jsb.style.display= "none"   //父系继承
+        }
+        sum4+=1;
+    })
+    })
+
+
 
 
 
@@ -387,6 +400,9 @@ drag.onmousedown = function (e) {//鼠标按下触发
         }
         lbphoto[2].style.display = "block"
     })
+
+
+
 
 
 
