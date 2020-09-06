@@ -122,11 +122,11 @@
         </tr>
 
         <tr>
-          <td><router-link to="/home/newslist">
+          <td><router-link to="/home/goodslist">
             <img src="../../images/cloth1.png">
             <div class="mui-media-body"></div>
           </router-link></td>
-          <td> <router-link to="/home/photoList">
+          <td> <router-link to="/home/goodslist">
             <img src="../../images/cloth2.png" alt />
             <div class="mui-media-body"></div>
           </router-link></td>
@@ -134,7 +134,7 @@
             <img src="../../images/cloth3.png" alt />
             <div class="mui-media-body"></div>
           </router-link></td>
-          <td><router-link to='/home/leavecomment/:id'>
+          <td><router-link to='/home/goodslist'>
             <img src="../../images/cloth4.png" alt />
             <div class="mui-media-body"></div>
           </router-link></td>
@@ -148,11 +148,11 @@
         </tr>
 
         <tr>
-          <td><router-link to="/home/newslist">
+          <td><router-link to="/home/goodslist">
             <img src="../../images/cloth1.png">
             <div class="mui-media-body"></div>
           </router-link></td>
-          <td> <router-link to="/home/photoList">
+          <td> <router-link to="/home/goodslist">
             <img src="../../images/cloth2.png" alt />
             <div class="mui-media-body"></div>
           </router-link></td>
@@ -160,7 +160,7 @@
             <img src="../../images/cloth3.png" alt />
             <div class="mui-media-body"></div>
           </router-link></td>
-          <td><router-link to='/home/leavecomment/:id'>
+          <td><router-link to='/home/goodslist'>
             <img src="../../images/cloth4.png" alt />
             <div class="mui-media-body"></div>
           </router-link></td>
