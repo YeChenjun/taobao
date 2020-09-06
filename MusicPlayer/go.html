@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Player</title>
+  <link rel="stylesheet" href="./css/index.css">
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
+</head>
+
+<body>
+  <div class="wrap">
+    <!-- 播放器主体区域 -->
+    <div class="play_wrap" id="player">
+      <div class="search_bar">
+        <img src="images/flowers.png" alt="" id="flower">
+        <!-- 搜索歌曲 -->
+        <input type="text"  v-model="query" @keyup.enter="searchMusic" >
+        <img src="images/zoom.png" alt="" id="zoom" @click="searchMusic">
+      </div>
+      <div class="center_con">
+        <!-- 搜索歌曲列表 -->
+        <div class='song_wrapper'>
+          <ul class="song_list">
+            <li v-for="item in musicList">
+              <a href="javascript:;" @click="playMusic(item.id),play2()" ></a>
+              <b>{{ item.name }}</b> 
+              <span v-if="item.mvid!=0" @click="playMV(item.mvid)"><i><img src="images/mvjiantou.png" alt=""></i></span>
+            </li>
+          </ul>
+          <img src="images/line.png" class="switch_btn" alt="">
+        </div>
+        <!-- 歌曲信息容器 -->
+        <div class="player_con" :class="{playing:isPlaying}">
+          <img :src="musicCover" class="cover autoRotate">
+        </div>
+        <!-- 评论容器 -->
+        <div class="comment_wrapper">
+          <div class='comment_list'>
+            <dl v-for="item in hotComments">
+              <dt><img :src="item.user.avatarUrl" alt=""></dt>
+
+              <dd class="detail">
+                {{ item.content }}
+              </dd>
+            </dl>
+          </div>
+          <img src="images/line.png" class="right_line">
+        </div>
+      </div>
+
+
+      <div class="audio_con">
+        <div class="plbg">
+          <img src="images/bofang.png" id="bofang" @click="play()">
+        </div>
+      </div>
+      <audio ref='audio' id="myMusic"   :src="musicUrl"  autoplay  loop  class="myaudio"></audio>
+
+      <div class="video_con" v-show="isShow" style="display: none;">
+        <video :src="mvUrl" controls="controls"></video>
+        <div class="mask" @click="hide"></div>
+      </div>
+    </div>
+  </div>
+  <!-- 开发环境版本，包含了有帮助的命令行警告 -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <!-- 官网提供的 axios 在线地址 -->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</body>
+
+<script src="./js/index.js"></script>
+
+</html>
