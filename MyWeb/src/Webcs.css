@@ -350,8 +350,8 @@ a{cursor: url('texiao/chuyin3.png'),default}
 
 .box {
     position: absolute;
-    top: 74%;
-    right: 22%;
+    top: 78%;
+    left: 10%;
     width: 100px;
     height: 100px;
     box-sizing: border-box;
